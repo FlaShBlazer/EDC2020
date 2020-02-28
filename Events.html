@@ -22,7 +22,24 @@
   <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
   
   
-  
+  <script>
+      var img = document.getElementById("myImg");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+  </script>
 </head>
 <body>
   <section class="menu cid-rywzXH37Ju" once="menu" id="menu1-3">
@@ -95,8 +112,9 @@
             <div class="card p-3 col-12 col-md-6 col-lg-4">
                 <div class="card-wrapper">
                     <div class="card-img">
-                        <img src="./assets/images/0526804b-d261-453d-ab79-dd1f26ecb9f1.jpg" alt="">
+                        <img src="./assets/images/IMG-20200228-WA0017.jpg" alt="" id="myImg">
                     </div>
+                    
                     <div class="card-box">
                         <h4 class="card-title mbr-fonts-style display-7">
                             Event A- Beta Pitch</h4>
@@ -153,8 +171,13 @@
             
         </div>
     </div>
+    
 </section>
-
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
 <section class="features3 cid-ryynnEbbty" id="features3-g">
 
     
@@ -272,7 +295,7 @@
                 <p class="mbr-text mb-0 mbr-fonts-style mbr-white align-center display-7">
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    © Copyright 2019 EDC, PICT - All Rights Reserved
+                    © Copyright 2020 EDC, PICT - All Rights Reserved
                 </p>
             </div>
         </div>
